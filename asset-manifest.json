@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Bank-Lending-System/static/css/main.40e2ac30.css",
-    "main.js": "/Bank-Lending-System/static/js/main.23e57f3f.js",
+    "main.js": "/Bank-Lending-System/static/js/main.04a97936.js",
     "index.html": "/Bank-Lending-System/index.html",
     "main.40e2ac30.css.map": "/Bank-Lending-System/static/css/main.40e2ac30.css.map",
-    "main.23e57f3f.js.map": "/Bank-Lending-System/static/js/main.23e57f3f.js.map"
+    "main.04a97936.js.map": "/Bank-Lending-System/static/js/main.04a97936.js.map"
   },
   "entrypoints": [
     "static/css/main.40e2ac30.css",
-    "static/js/main.23e57f3f.js"
+    "static/js/main.04a97936.js"
   ]
 }
