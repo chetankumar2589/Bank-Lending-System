@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bank-lending-system/static/css/main.40e2ac30.css",
+    "main.js": "/bank-lending-system/static/js/main.23e57f3f.js",
+    "index.html": "/bank-lending-system/index.html",
+    "main.40e2ac30.css.map": "/bank-lending-system/static/css/main.40e2ac30.css.map",
+    "main.23e57f3f.js.map": "/bank-lending-system/static/js/main.23e57f3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40e2ac30.css",
+    "static/js/main.23e57f3f.js"
+  ]
+}
