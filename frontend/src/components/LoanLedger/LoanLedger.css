@@ -1,0 +1,137 @@
+/* frontend/src/components/LoanLedger/LoanLedger.css */
+
+.loan-ledger-card {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.loan-ledger-card h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loan-ledger-card .form-group {
+    margin-bottom: 20px;
+}
+
+.loan-ledger-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.loan-ledger-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fcfcfc;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#333" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    cursor: pointer;
+}
+
+.loan-ledger-card select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.ledger-details {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.ledger-details h3 {
+    color: #444;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.loan-summary, .transaction-list {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.loan-summary p, .transaction-list li p {
+    margin-bottom: 5px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.loan-summary p strong, .transaction-list li p strong {
+    color: #000;
+}
+
+.transaction-list {
+    list-style: none; /* Remove default list bullets */
+    padding-left: 20px;
+}
+
+.transaction-item {
+    border-bottom: 1px dashed #cfe2ff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.transaction-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.loan-status {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    display: inline-block; /* To make padding/border work */
+}
+
+.loan-status.active {
+    background-color: #e0ffe0; /* Light green */
+    color: #008000; /* Dark green */
+}
+
+.loan-status.paid-off {
+    background-color: #ffe0e0; /* Light red */
+    color: #cc0000; /* Dark red */
+}
+
+.info-message {
+    background-color: #e0f7fa;
+    color: #007bff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.error-message {
+    background-color: #ffe0e0; /* Light red */
+    color: #cc0000; /* Dark red */
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}

@@ -1,0 +1,76 @@
+.payment-form-card {
+    max-width: 500px; /* Slightly narrower than loan creation form */
+    margin: 2rem auto;
+    padding: 4.5rem;
+    border: 1px solid #e0e6eb; /* Subtle border */
+}
+
+.payment-form-card h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4CAF50; /* A friendly green for payments */
+}
+
+.payment-form-card .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.payment-form-card label {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: #444;
+    display: block;
+}
+
+.payment-form-card input[type="number"],
+.payment-form-card select {
+    width: 90%;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #cceeff;
+    background-color: #f7fcff;
+    font-size: 1.05rem;
+}
+
+.payment-form-card input[type="number"]:focus,
+.payment-form-card select:focus {
+    outline: none;
+    border-color: #4CAF50; /* Green focus border */
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.25); /* Green shadow */
+    background-color: #ffffff;
+}
+
+.payment-form-card button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    background-color: #4CAF50; /* Green button */
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+.payment-form-card button[type="submit"]:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
+}
+
+/* Inherit error/success message styling from global index.css */
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .payment-form-card {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+    .payment-form-card h2 {
+        font-size: 1.8rem;
+    }
+    .payment-form-card label {
+        font-size: 1rem;
+    }
+    .payment-form-card input,
+    .payment-form-card select,
+    .payment-form-card button {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}

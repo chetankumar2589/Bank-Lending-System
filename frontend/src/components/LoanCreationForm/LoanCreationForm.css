@@ -1,0 +1,99 @@
+/* loan-creation-form-card specific styling to override general card if needed */
+.loan-creation-form-card {
+    max-width: 600px; /* Adjust max width for the form card */
+    margin: 2rem auto; /* Center the card with margin */
+    padding: 4.5rem;
+}
+
+.loan-creation-form-card h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #007bff; /* Primary color for the title */
+}
+
+.loan-creation-form-card .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align labels to start */
+    margin-bottom: 1.5rem;
+}
+
+.loan-creation-form-card label {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: #444;
+    width: 100%; /* Ensure label takes full width */
+}
+
+.loan-creation-form-card input[type="text"],
+.loan-creation-form-card input[type="number"],
+.loan-creation-form-card select {
+    width: 90%; /* Make inputs take full width of their container */
+    max-width: 100%; /* Override general max-width for form inputs */
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #cceeff; /* Lighter blue border for inputs */
+    background-color: #f7fcff; /* Very light blue background for inputs */
+    font-size: 1.05rem;
+}
+
+.loan-creation-form-card input[type="text"]:focus,
+.loan-creation-form-card input[type="number"]:focus,
+.loan-creation-form-card select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+    background-color: #ffffff;
+}
+
+.loan-creation-form-card button[type="submit"] {
+    width: 100%; /* Full width button */
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    background-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.loan-creation-form-card button[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+.error-message {
+    color: #dc3545; /* Red for errors */
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.success-message {
+    color: #28a745; /* Green for success */
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Responsive adjustments for the form */
+@media (max-width: 600px) {
+    .loan-creation-form-card {
+        padding: 1.5rem; /* Less padding on small screens */
+        margin: 1rem auto;
+    }
+    .loan-creation-form-card h2 {
+        font-size: 1.8rem;
+    }
+    .loan-creation-form-card label {
+        font-size: 1rem;
+    }
+    .loan-creation-form-card input,
+    .loan-creation-form-card select,
+    .loan-creation-form-card button {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}

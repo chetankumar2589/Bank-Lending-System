@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    font-weight: 700;
+    color: #444;
+}
+
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+
+p {
+    margin-bottom: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.text-center { text-align: center; }
+.text-sm { font-size: 0.875em; }
+.text-gray-500 { color: #6b7280; }
+
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-8 { margin-bottom: 2rem; }
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+.info-message {
+    background-color: #e0f7fa;
+    color: #007bff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.error-message {
+    background-color: #ffe0e0;
+    color: #cc0000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #555;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+    transform: none;
+    box-shadow: none;
+}
+
+.nav-button.active {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+.nav-button.active:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.feature-card {
+    flex: 1 1 calc(50% - 15px);
+    min-width: 280px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 0.95em;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.feature-card .button.nav-button {
+    align-self: flex-start;
+    margin-top: auto;
+    background-color: #007bff;
+    color: white;
+}
+
+.feature-card .button.nav-button:hover {
+    background-color: #0056b3;
+}
+
+.stat-card {
+    flex: 1 1 calc(33.33% - 15px);
+    min-width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.stat-card h3 {
+    color: #444;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        gap: 8px;
+    }
+
+    .nav-button {
+        width: 100%;
+        text-align: left;
+    }
+
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.3em; }
+    h3 { font-size: 1.1em; }
+
+    .card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .feature-card, .stat-card {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .flex-col.md\:flex-row {
+        flex-wrap: wrap;
+    }
+}

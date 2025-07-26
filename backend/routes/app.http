@@ -1,0 +1,9 @@
+POST http://localhost:5000/api/v1/loans
+Content-Type: application/json
+
+{
+    "customer_id": "9aa7fae5-2f2b-4939-92a9-7112655ece21",
+    "loan_amount": 10000.00,
+    "loan_period_years": 5,
+    "interest_rate_yearly": 7.5
+}
